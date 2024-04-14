@@ -23,7 +23,7 @@ const paymentController = async (req1, res2) => {
 		//signature
 		const crypto = require("crypto");
 		var signature = crypto.createHmac("sha256", secretkey).update(rawSignature).digest("hex");
-		console.log("-------------SIGNATURE----------");
+		console.log("-------------SIGNATURE------------");
 		console.log(signature);
 		const requestBody = JSON.stringify({
 			partnerCode: partnerCode,
