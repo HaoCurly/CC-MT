@@ -108,7 +108,7 @@ const updateVehicles = async (req, res) => {
 				},
 			}
 		);
-		res.status(200).send("update vehicles thành công");
+		res.status(200).send("update vehicles thành công!");
 	} catch (error) {
 		res.status(500).send(error);
 	}
