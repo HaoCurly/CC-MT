@@ -1,6 +1,7 @@
 const {Trip, Station, sequelize} = require("../../models");
-
+// Hàm xử lý yêu cầu tạo mới một chuyến đi
 const createTrip = async (req, res) => {
+	    // Lấy thông tin từ request body (địa điểm xuất phát, địa điểm đến, thời gian bắt đầu)
 	const {fromStation, toStation, startTime} = req.body;
 	try {
 		const tripFind = await Trip.findOne({
