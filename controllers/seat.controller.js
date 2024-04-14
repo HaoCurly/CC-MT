@@ -89,7 +89,7 @@ const updateSeats = async (req, res) => {
 				},
 			}
 		);
-		res.status(200).send("update seats thành công");
+		res.status(200).send("update chỗ ngồi thành công");
 	} catch (error) {
 		res.status(500).send(error);
 	}
