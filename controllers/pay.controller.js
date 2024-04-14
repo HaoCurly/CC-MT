@@ -18,12 +18,12 @@ const paymentController = async (req1, res2) => {
 		//accessKey=$accessKey&amount=$amount&extraData=$extraData&ipnUrl=$ipnUrl&orderId=$orderId&orderInfo=$orderInfo&partnerCode=$partnerCode&redirectUrl=$redirectUrl&requestId=$requestId&requestType=$requestType
 		var rawSignature = "accessKey=" + accessKey + "&amount=" + amount + "&extraData=" + extraData + "&ipnUrl=" + ipnUrl + "&orderId=" + orderId + "&orderInfo=" + orderInfo + "&partnerCode=" + partnerCode + "&redirectUrl=" + redirectUrl + "&requestId=" + requestId + "&requestType=" + requestType;
 		//puts raw signature
-		console.log("--------------------RAW SIGNATURE----------------");
+		console.log("------------------RAW SIGNATURE----------------");
 		console.log(rawSignature);
 		//signature
 		const crypto = require("crypto");
 		var signature = crypto.createHmac("sha256", secretkey).update(rawSignature).digest("hex");
-		console.log("--------------------SIGNATURE----------------");
+		console.log("-------------SIGNATURE----------");
 		console.log(signature);
 		const requestBody = JSON.stringify({
 			partnerCode: partnerCode,
@@ -63,7 +63,7 @@ const paymentController = async (req1, res2) => {
 				res2.status(200).send(body);
 			});
 			res.on("end", () => {
-				console.log("No more data in response.");
+				console.log("No more data in response");
 			});
 		});
 		req.on("error", (e) => {
