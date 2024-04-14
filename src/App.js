@@ -6,7 +6,7 @@ import {createBrowserHistory} from "history";
 import {Router, Switch} from "react-router-dom";
 import {HomeTemplate} from "./templates/HomeTemplate";
 import "antd/dist/antd.css";
-
+//
 import Home from "./pages/Home";
 import Booking from "./pages/Booking";
 import AlertAll from "./components/Alert/AlertAll";
