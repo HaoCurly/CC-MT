@@ -12,7 +12,7 @@ const createTrip = async (req, res) => {
 			},
 		});
 		if (tripFind) {
-			res.status(404).send("Trip đã tồn tại");
+			res.status(404).send("Trip đã tồn tại.");
 		} else {
 			const newTrip = await Trip.create({
 				fromStation,
