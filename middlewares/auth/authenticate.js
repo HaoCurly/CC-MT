@@ -7,7 +7,7 @@ const authenticate = (req, res, next) => {
       req.user = decode;
       next();
     } else {
-      res.status(401).send("Hãy đăng nhập để tiếp tục");
+      res.status(401).send("Hãy đăng nhập để tiếp tục.");
     }
   } catch (error) {
     res.status(500).send(error);
