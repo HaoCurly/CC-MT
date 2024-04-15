@@ -25,7 +25,7 @@ const createTripPassenger = async (req, res) => {
 			},
 		});
 		if (TripPassengerFind) {
-			res.status(404).send("Xe đã được phân vào chuyến khác vui lòng chọn xe hoặc nhà xe khác");
+			res.status(404).send("Xe đã được phân vào chuyến khác vui lòng chọn xe or nhà xe khác");
 		} else {
 			const newTripPassenger = await TripPassenger.create({
 				tripId,
