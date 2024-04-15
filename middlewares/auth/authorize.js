@@ -3,7 +3,7 @@ const authorize = (arrType) => (req, res, next) => {
     if (arrType.findIndex((item) => item === user.type) > -1) {
       next();
     } else {
-      res.status(403).send("Bạn không có quyền thực thi");
+      res.status(403).send("Bạn chưa có quyền ");
     }
   };
   
