@@ -575,7 +575,7 @@ const deleteTicket = async (req, res) => {
 				id,
 			},
 		});
-		res.status(200).send(`Đã xóa vé có id là: ${id}`);
+		res.status(200).send(`Đã xóa vé có số id  là: ${id}`);
 	} catch (error) {
 		res.status(500).send(error);
 	}
