@@ -57,7 +57,7 @@ const getAllComment = async (req, res) => {
 		res.status(500).send(error);
 	}
 };
-
+//
 const getAllCommentUser = async (req, res) => {
 	const {id} = req.params;
 	const {passengerId} = req.query;
