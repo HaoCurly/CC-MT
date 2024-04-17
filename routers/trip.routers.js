@@ -1,6 +1,6 @@
 const express = require("express");
-const {createTrip, getAllTrip, deleteTrip, updateTrip, getAllTripByUser, getDetailTrip} = require("../backend-datVeXe/controllers/trip.controllers");
-const {checkExist} = require("../backend-datVeXe/middlewares/validations/checkExist");
+const {createTrip, getAllTrip, deleteTrip, updateTrip, getAllTripByUser, getDetailTrip} = require("../controllers/trip.controllers");
+const {checkExist} = require("../middlewares/validations/checkExist");
 const {Trip} = require("../models");
 
 const tripRouter = express.Router();

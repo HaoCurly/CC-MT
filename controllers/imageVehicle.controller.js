@@ -1,4 +1,4 @@
-const {ImageVehicle, Vehicles} = require("../../models");
+const {ImageVehicle, Vehicles} = require("../models");
 
 const createImgVehicle = async (req, res) => {
 	const {vehicleId} = req.query;

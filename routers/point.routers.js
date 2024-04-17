@@ -1,5 +1,5 @@
 const express = require("express");
-const {getAllPointByStationId, getDetailPoint, updatePoint, deletePoint, createPoint} = require("../backend-datVeXe/controllers/point.controller");
+const {getAllPointByStationId, getDetailPoint, updatePoint, deletePoint, createPoint} = require("../controllers/point.controller");
 
 const PointRouter = express.Router();
 

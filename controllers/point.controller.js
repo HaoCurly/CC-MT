@@ -1,4 +1,4 @@
-const {Station, Point} = require("../../models");
+const {Station, Point} = require("../models");
 
 const getAllPointByStationId = async (req, res) => {
 	const {stationId} = req.query;

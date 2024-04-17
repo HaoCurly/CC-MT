@@ -1,6 +1,6 @@
 const {Op} = require("sequelize");
 const {data} = require("../config/dataProvince");
-const {Station} = require("../../models");
+const {Station} = require("../models");
 
 const getAllProvince = async (req, res) => {
 	res.status(201).send(data);

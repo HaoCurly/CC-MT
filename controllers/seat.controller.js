@@ -1,4 +1,4 @@
-const {Seats, Vehicles} = require("../../models");
+const {Seats, Vehicles} = require("../models");
 
 const createSeat = async (req, res) => {
 	const {vehicleId} = req.query;

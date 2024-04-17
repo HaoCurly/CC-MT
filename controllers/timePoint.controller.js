@@ -1,10 +1,10 @@
-const {Ticket, User, TripPassenger, Trip, PassengerCarCompany, Vehicles, Seats, PointTicket, SeatTicket, Point, ImageVehicle, Station, TimePoint} = require("../../models");
+const {Ticket, User, TripPassenger, Trip, PassengerCarCompany, Vehicles, Seats, PointTicket, SeatTicket, Point, ImageVehicle, Station, TimePoint} = require("../models"); 
 
 const getTimePointByTrip = async (req, res) => {
 	const {tripPassengerId} = req.query;
 	try {
 		if (tripPassengerId) {
-			const listTimePoint = await TimePoint.findAll({
+			const listTimePoint = await TimePoint.findAll({     
 				where: {
 					tripPassengerId,
 				},

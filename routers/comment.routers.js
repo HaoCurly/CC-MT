@@ -1,6 +1,6 @@
 const express = require("express");
-const {getAllComment, deleteComment, updateComment, getDetailComment, createComment, getAllCommentUser} = require("../backend-datVeXe/controllers/comment.controller");
-const {checkExist} = require("../backend-datVeXe/middlewares/validations/checkExist");
+const {getAllComment, deleteComment, updateComment, getDetailComment, createComment, getAllCommentUser} = require("../controllers/comment.controller");
+const {checkExist} = require("../middlewares/validations/checkExist");
 const {Comment} = require("../models");
 
 const CommentRouter = express.Router();

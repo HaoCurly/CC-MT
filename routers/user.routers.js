@@ -1,9 +1,9 @@
 const express = require("express");
 const {User} = require("../models");
-const {register, login, uploadAvatar, getAllTrip, getAllUser, getDetailUser, updateUser, deleteUser, updateUserBooking} = require("../backend-datVeXe/controllers/user.controllers");
-const {checkExist} = require("../backend-datVeXe/middlewares/validations/checkExist");
-const {uploadImage} = require("../backend-datVeXe/middlewares/upload/uploadImages");
-const {authenticate} = require("../backend-datVeXe/middlewares/auth/authenticate");
+const {register, login, uploadAvatar, getAllTrip, getAllUser, getDetailUser, updateUser, deleteUser, updateUserBooking} = require("../controllers/user.controllers");
+const {checkExist} = require("../middlewares/validations/checkExist");
+const {uploadImage} = require("../middlewares/upload/uploadImages");
+const {authenticate} = require("../middlewares/auth/authenticate");
 const userRouter = express.Router();
 userRouter.post("/register", register);
 userRouter.post("/login", login);

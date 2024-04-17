@@ -1,7 +1,7 @@
 const express = require("express");
-const {getTimePointByTrip, CreateTimePointByTrip, GetTimePointDetail} = require("../backend-datVeXe/controllers/timePoint.controller");
+const {getTimePointByTrip, CreateTimePointByTrip, GetTimePointDetail} = require("../controllers/timePoint.controller");
 
-const {checkExist} = require("../backend-datVeXe/middlewares/validations/checkExist");
+const {checkExist} = require("../middlewares/validations/checkExist");
 const {TimePoint} = require("../models");
 
 const TimePointRouter = express.Router();

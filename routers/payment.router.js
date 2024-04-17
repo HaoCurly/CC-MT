@@ -1,5 +1,5 @@
 const express = require("express");
-const {paymentController} = require("../backend-datVeXe/controllers/pay.controller");
+const {paymentController} = require("../controllers/pay.controller");
 
 const PaymentRouter = express.Router();
 

@@ -1,4 +1,4 @@
-const {Ticket, User, TripPassenger, Trip, PassengerCarCompany, Vehicles, Seats, PointTicket, SeatTicket, Point, ImageVehicle, Station, TimePoint} = require("../../models");
+const {Ticket, User, TripPassenger, Trip, PassengerCarCompany, Vehicles, Seats, PointTicket, SeatTicket, Point, ImageVehicle, Station, TimePoint} = require("../models");
 const createTicket = async (req, res) => {
 	const {user_id, tripPassengerId} = req.body;
 	try {

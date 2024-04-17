@@ -1,6 +1,6 @@
 const express = require("express");
-const { getAllRate, createRating } = require("../backend-datVeXe/controllers/rate.controller");
-const { checkExist } = require("../backend-datVeXe/middlewares/validations/checkExist");
+const { getAllRate, createRating } = require("../controllers/rate.controller");
+const { checkExist } = require("../middlewares/validations/checkExist");
 const { Rate } = require("../models");
 
 const RateRouter = express.Router();

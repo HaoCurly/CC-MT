@@ -1,4 +1,4 @@
-const {Rate, Comment} = require("../../models");
+const {Rate, Comment} = require("../models");
 
 const createRating = async (req, res) => {
 	const {numberRate} = req.body;

@@ -1,8 +1,8 @@
 const express = require("express");
-const {getAllImgVehicle, deleteImgVehicle, updateImgVehicle, getDetailImgVehicle, createImgVehicle} = require("../backend-datVeXe/controllers/imageVehicle.controller");
-const {checkExist} = require("../backend-datVeXe/middlewares/validations/checkExist");
+const {getAllImgVehicle, deleteImgVehicle, updateImgVehicle, getDetailImgVehicle, createImgVehicle} = require("../controllers/imageVehicle.controller");
+const {checkExist} = require("../middlewares/validations/checkExist");
 const {ImageVehicle} = require("../models");
-const {uploadImage} = require("../backend-datVeXe/middlewares/upload/uploadImages");
+const {uploadImage} = require("../middlewares/upload/uploadImages");
 
 const ImageVehicleRouter = express.Router();
 

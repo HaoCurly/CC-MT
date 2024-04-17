@@ -5,8 +5,8 @@ const {
   deleteSeats,
   updateSeats,
   getDetailSeat,
-} = require("../backend-datVeXe/controllers/seat.controller");
-const { checkExist } = require("../backend-datVeXe/middlewares/validations/checkExist");
+} = require("../controllers/seat.controller");
+const { checkExist } = require("../middlewares/validations/checkExist");
 const { Seats } = require("../models");
 
 const SeatRouter = express.Router();

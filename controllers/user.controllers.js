@@ -1,5 +1,5 @@
 // Import các module và model cần thiết
-const { User, sequelize } = require("../../models");
+const { User, sequelize } = require("../models");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { Op } = require("sequelize");

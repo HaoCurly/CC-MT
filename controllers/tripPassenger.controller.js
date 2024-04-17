@@ -1,4 +1,4 @@
-const {TripPassenger, PassengerCarCompany, Trip, ImageVehicle, User, Comment, Station, Seats, Vehicles, sequelize, Point, Rate, Ticket, TimePoint} = require("../../models");
+const {TripPassenger, PassengerCarCompany, Trip, ImageVehicle, User, Comment, Station, Seats, Vehicles, sequelize, Point, Rate, Ticket, TimePoint} = require("../models");
 const {Op} = require("sequelize");
 
 const getAllTripPassengerNew = async (req, res) => {

@@ -1,6 +1,6 @@
 const express = require("express");
-const {getAllVehicles, createVehicles, getDetailVehicles, deleteVehicles, updateVehicles, getAllVehiclesByPassenger} = require("../backend-datVeXe/controllers/vehicle.controller");
-const {checkExist} = require("../backend-datVeXe/middlewares/validations/checkExist");
+const {getAllVehicles, createVehicles, getDetailVehicles, deleteVehicles, updateVehicles, getAllVehiclesByPassenger} = require("../controllers/vehicle.controller");
+const {checkExist} = require("../middlewares/validations/checkExist");
 const {Vehicles} = require("../models");
 
 const VehiclesRouter = express.Router();

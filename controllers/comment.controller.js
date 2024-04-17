@@ -1,4 +1,4 @@
-const {Comment, User, PassengerCarCompany, Rate} = require("../../models");
+const {Comment, User, PassengerCarCompany, Rate} = require("../models");
 
 const createComment = async (req, res) => {
 	const {content, userId, passengerId} = req.body;
